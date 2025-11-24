@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" clasGet-Command git
+# or
+where.exe gits="scroll-smooth scroll-pt-20">
+  <head>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+        "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+        "@splinetool/react-spline": "https://esm.sh/@splinetool/react-spline@4.0.0?external=react,react-dom",
+        "@splinetool/runtime": "https://esm.sh/@splinetool/runtime@1.5.5"
+      }
+    }
+    </script>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gourav Vaishnav | Full Stack Web Developer</title>
+    <meta name="description" content="Portfolio of Gourav Vaishnav, a Full Stack Web Developer specializing in React, Next.js, Python, and Cloud Technologies." />
+    <meta name="keywords" content="Gourav Vaishnav, Full Stack Developer, React Developer, Next.js, Python, Portfolio, Bengaluru" />
+    <meta name="author" content="Gourav Vaishnav" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Gourav Vaishnav | Full Stack Web Developer" />
+    <meta property="og:description" content="Portfolio of Gourav Vaishnav, specializing in modern web development with React, Next.js, and Python." />
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#3b82f6',
+              secondary: '#6366f1',
+              dark: '#0f172a',
+              light: '#f8fafc',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+
+    <!-- Theme Initialization Script to prevent flash -->
+    <script>
+      (function() {
+        try {
+          var localTheme = localStorage.getItem('theme');
+          var supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (localTheme === 'dark' || (!localTheme && supportDarkMode)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <style>
+      /* Ensure Spline Viewer is transparent */
+      spline-viewer {
+        background: transparent !important;
+      }
+    </style>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-light dark:bg-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
